@@ -7,6 +7,6 @@ dependencies {
   compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }
 
-cordova.plugins.addressPlugin.address(YourBaiduMapBrowserK,latitude,longitude,result =>{
+cordova.plugins.addressPlugin.address(YourBaiduMapBrowserKey,latitude,longitude,result =>{
       console.log("result:",result);
     },error =>console.log("error:",error));
