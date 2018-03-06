@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="addressPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>addressPlugin</name>
+<js-module name="addressPlugin" src="www/addressPlugin.js">
+<clobbers target="cordova.plugins.addressPlugin" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="addressPlugin"><param name="android-package" value="addressPlugin.addressPlugin" /></feature>
+</config-file>
+<config-file target="AndroidManifest.xml" parent="/manifest">
+<uses-permission android:name="android.permission.INTERNET" />
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+<source-file src="src/android/addressPlugin.java" target-dir="src/addressPlugin/addressPlugin" />
+</platform>
+</plugin>

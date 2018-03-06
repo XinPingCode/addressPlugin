@@ -1,0 +1,17 @@
+{
+  "name": "addressPlugin",
+  "version": "0.0.18",
+  "cordova": {
+    "id": "addressPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "ChenXinPing (XinPingCode)",
+  "license": "ISC",
+  "description": ""
+}
